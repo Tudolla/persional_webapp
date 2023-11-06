@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>Register!</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register account!</h1>
+    <form  action="registerServlet" method="post">
+      <label>User name:</label>
+      <input type="text" id="username" name="username" required>
+      <label>Password:</label>
+      <input type="password" id="password" name="password" required>
+      <label>Address:</label>
+      <input type="text" id="address" name="address" required>
+      <label>Phone number:</label>
+      <input type="text" id="phone" name="phone" required>
+      
+      <input style="background-color:green" type="submit" value="Register" >
+      
+      <label id="login_label" class="login_label">You already have an account. Login!</label>
+    </form>
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

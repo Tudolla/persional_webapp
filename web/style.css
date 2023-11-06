@@ -1,0 +1,108 @@
+.container {
+  width: 360px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url("imagebackground.jpg");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin: 5px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#message.success {
+  color: green;
+}
+
+#message.error {
+  color: red;
+}
+
+#login_label{
+    padding-left: 90px;
+}
+
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  width: 25%;
+}
+
+.products {
+  width: 70%;
+}
+
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.product p {
+  margin: 0;
+}
+
+.category ul {
+  padding: 0;
+  list-style: none;
+}
+
+.category li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}

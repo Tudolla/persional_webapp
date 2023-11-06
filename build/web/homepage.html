@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>homepage</title>
+<!--        <link rel="stylesheet" type="text/css" href="style.css">-->
+        <style>
+            .tab {
+                overflow: hidden;
+                background-color: #529cc7;
+                display: flex;
+                align-items: center;
+                border-radius: 10px;
+            }
+
+            .tab button {
+                background-color: inherit;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+                color: white;
+            }
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            .tab button.active {
+                background-color: #ccc;
+            }
+            .search-bar {
+                margin-left: auto; 
+                padding: 10px;
+                display: flex;
+                align-items: center;
+            }
+            .search-bar input {
+                width: 380px;
+                height: 40px;
+                margin-right: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+            .logo {
+                width: 50px;
+                height: 50px;
+
+            }
+            .content {
+                margin-top: 20px;
+            }
+            .okchua{
+                margin-right: 380px;
+            }
+            .logo{
+                float: left;
+                margin-right: 10px;    
+            }
+            .nameshop{
+                display: flex;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        </style>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="tab">
+            <div class="search-bar">
+                <div class="okchua">
+                    <img src="logo.png" alt="Logo" class="logo">
+                    <label class="nameshop"> ∞ d'or Infinity</label>
+                </div>
+                <input type="search" placeholder="Search something you want...">
+                <button type="submit" class="searchbutton">Search</button>
+            </div>
+            <button>Home</button>
+            <button>Category</button>
+            <button>Become seller</button>
+            <button id="cart-button">Orders</button>
+        </div>
+        <div class="content">
+            <section class="product">
+                <div class="container">
+                    <div class="product-items">
+                        <div class ="product-item">
+                            <img src="images/shoe-1.png" alt="">
+                            <div class ="product-item-text">
+                                <p><span>300.000</span><sup>VND</sup></p>
+                                <h1>Adidas Leo</h1>
+                            </div>
+                            <button>Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
