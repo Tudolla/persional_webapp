@@ -68,7 +68,7 @@
 
 
         <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="tab">
@@ -82,8 +82,13 @@
             </div>
             <button>Home</button>
             <button>Category</button>
-            <button>Become seller</button>
-            <button id="cart-button">Orders</button>
+            <button>Seller</button>
+           
+            <div class="cart-icon">
+<!--                <p><i class="fa-solid fa-cart-shopping"></i><span>0</span><sup>VND</sup></p>-->
+             <button>Cart<span>0</span><sup>VND</sup></button>
+            </div>
+            <!--            <button id="cart-button">Orders</button>-->
         </div>
 
         <section class="product">
@@ -93,7 +98,7 @@
                         <img src="images/shoe-1.png" alt="">
                         <div class ="product-item-text">
                             <p><span>300.000</span><sup>VND</sup></p>
-                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo</h1>
+                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo 1</h1>
                         </div>
                         <button>Add to Card</button>
                     </div>
@@ -102,7 +107,7 @@
                         <img src="images/shoe-1.png" alt="">
                         <div class ="product-item-text">
                             <p><span>300.000</span><sup>VND</sup></p>
-                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo</h1>
+                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo 2</h1>
                         </div>
                         <button>Add to Card</button>
                     </div>
@@ -111,7 +116,7 @@
                         <img src="images/shoe-2.png" alt="">
                         <div class ="product-item-text">
                             <p><span>300.000</span><sup>VND</sup></p>
-                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo</h1>
+                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo 3</h1>
                         </div>
                         <button>Add to Card</button>
                     </div>
@@ -120,59 +125,48 @@
                         <img src="images/shoe-3.png" alt="">
                         <div class ="product-item-text">
                             <p><span>300.000</span><sup>VND</sup></p>
-                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo</h1>
+                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo 4</h1>
                         </div>
                         <button>Add to Card</button>
                     </div>
 
                     <div class ="product-item">
-                        <img src="images/shoe-4.png" alt="">
+                        <img src="images/shoe-3.png" alt="">
                         <div class ="product-item-text">
                             <p><span>300.000</span><sup>VND</sup></p>
-                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo</h1>
+                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo 8</h1>
                         </div>
                         <button>Add to Card</button>
                     </div>
+
+
                 </div>
             </div>
         </section>
 
         <section class="cart">
+          
             <h2>Cart ne</h2>
             <form action="">
                 <table>
                     <thead>
                         <tr>
-                            <th> San pham</th>
-                            <th> Gia </th>
-                            <th>SL</th>
-                            <th>Chon</th>
+                            <th> Product</th>
+                            <th> Price </th>
+                            <th>Items</th>
+                            <th>Choose</th>
                         </tr>
                     </thead>
                     <tbody>
-<!--                        <tr>
-                            <td style="display:flex; align-items: center"><img style="width:70px;" src="images/shoe-1.png" alt="">Adidas</td>
-                            <td><span>300.000</span><sup>VND</sup></td>
-                            <td><input style="width: 30px; outline: none" type="number" value="1" min="0"></td>
-                            <td style="cursor:pointer">Xoa</td>
 
-                        </tr>
-                    </tbody>
-
-                    <tbody>
-                        <tr>
-                            <td style="display:flex; align-items: center"><img style="width:70px;" src="images/shoe-2.png" alt="">Adidas</td>
-                            <td><span>300.000</span><sup>VND</sup></td>
-                            <td><input style="width: 30px; outline: none" type="number" value="1" min="1"></td>
-                            <td style="cursor:pointer">Xoa</td>
-
-                        </tr>-->
                     </tbody>
                 </table>
                 <div style="text-align:right" class="price-total">
-                    <p style="font-weight: bold">Tong tien: <span>0</span><sup>VND</sup></p>
+                    <p style="font-weight: bold">Total Money: <span>0</span><sup>VND</sup></p>
                 </div>
-              
+                <button>Payment</button>
+                <i class="fa-regular fa-circle-xmark"></i>
+
             </form>
         </section>
 
