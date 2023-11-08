@@ -5,6 +5,27 @@
         <title>homepage</title>
 
         <style>
+
+            .btn-header {
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 4px 6px;
+                width: 400px!important;
+            }
+            .btn-header i{
+                margin-right: 6px;
+            }
+            .cart-container {
+                position: relative;
+            }
+            .close-cart {
+                position:absolute;
+                font-size:40px;
+                top: 10px;
+                left: 10px;
+            }
             .tab {
                 overflow: hidden;
                 background-color: #529cc7;
@@ -63,12 +84,52 @@
                 font-size: 20px;
                 font-weight: bold;
             }
+            .product-items{
+                display:flex;
+                justify-content: space-between;
+                background-color: #ddd;
+                padding: 12px;
+                
+            }
 
+            .product-item{
+                width: 400px;
+                background-color: #fff;
+                padding: 12px;
+            }
+
+            .product-item img{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .product-item-text{
+                display: flex;
+                justify-content: space-between; 
+
+            }
+
+            .product-item button{
+                text-align: center;
+                margin-top: 12px;
+                height: 30px;
+                padding: 0 12px;
+                cursor: pointer;
+                border:none;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .product-item button:hover{
+                background-color: transparent;
+            }
         </style>
 
 
         <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
     </head>
     <body>
         <div class="tab">
@@ -80,14 +141,25 @@
                 <input type="search" placeholder="Search something you want...">
                 <button type="submit" class="searchbutton">Search</button>
             </div>
-            <button>Home</button>
-            <button>Category</button>
-            <button>Seller</button>
-           
-            <div class="cart-icon">
-<!--                <p><i class="fa-solid fa-cart-shopping"></i><span>0</span><sup>VND</sup></p>-->
-             <button>Cart<span>0</span><sup>VND</sup></button>
-            </div>
+            <button class="btn-header" >
+                <i class="fa-solid fa-house"></i>
+                Home</button>
+            <button class="btn-header" >
+                <i class="fa-solid fa-shop"></i>
+                <span>
+                    Category
+                </span>
+            </button>
+            <button class="btn-header" >
+                <i class="fa-brands fa-buysellads"></i>
+                Seller</button>
+
+            <!--            <div class="cart-icon">-->
+            <!--                <p><i class="fa-solid fa-cart-shopping"></i><span>0</span><sup>VND</sup></p>-->
+            <button class="ok btn-header" >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>30.000</span><sup>VND</sup></button>
+
             <!--            <button id="cart-button">Orders</button>-->
         </div>
 
@@ -134,18 +206,23 @@
                         <img src="images/shoe-3.png" alt="">
                         <div class ="product-item-text">
                             <p><span>300.000</span><sup>VND</sup></p>
-                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo 8</h1>
+                            <h1 style="font-weight: bold; font-size: 18px">Adidas Leo 4</h1>
                         </div>
                         <button>Add to Card</button>
                     </div>
+
+                    
 
 
                 </div>
             </div>
         </section>
 
-        <section class="cart">
-          
+        <section class="cart cart-container">
+            <a class="close-cart">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </a>
+
             <h2>Cart ne</h2>
             <form action="">
                 <table>
@@ -165,7 +242,7 @@
                     <p style="font-weight: bold">Total Money: <span>0</span><sup>VND</sup></p>
                 </div>
                 <button>Payment</button>
-                <i class="fa-regular fa-circle-xmark"></i>
+
 
             </form>
         </section>

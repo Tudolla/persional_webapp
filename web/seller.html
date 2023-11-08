@@ -1,16 +1,142 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>homepage</title>
+
+        <style>
+            .tab {
+                overflow: hidden;
+                background-color: #529cc7;
+                display: flex;
+                align-items: center;
+                border-radius: 10px;
+            }
+
+            .tab button {
+                background-color: inherit;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+                color: white;
+            }
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            .tab button.active {
+                background-color: #ccc;
+            }
+            .search-bar {
+                margin-left: auto; 
+                padding: 10px;
+                display: flex;
+                align-items: center;
+            }
+            .search-bar input {
+                width: 380px;
+                height: 40px;
+                margin-right: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+            .logo {
+                width: 50px;
+                height: 50px;
+
+            }
+            .content {
+                margin-top: 20px;
+            }
+            .okchua{
+                margin-right: 380px;
+            }
+            .logo{
+                float: left;
+                margin-right: 10px;    
+            }
+            .nameshop{
+                display: flex;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+/*---------------seller form*/
+            .mybody {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            form {
+                display: grid;
+                gap: 1rem;
+                padding: 2rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f5f5f5;
+            }
+
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+        </style>
+
+
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="tab">
+            <div class="search-bar">
+                <div class="okchua">
+                    <img src="logo.png" alt="Logo" class="logo">
+                    <label class="nameshop"> ∞ d'or Infinity</label>
+                </div>
+                <input type="search" placeholder="Search something you want...">
+                <button type="submit" class="searchbutton">Search</button>
+            </div>
+            <button>Home</button>
+            <button>Category</button>
+            <button>Seller</button>
+
+
+            <button class="okk">Cart<span>0</span><sup>VND</sup></button>
+
+        </div>
+        <div class="mybody">
+        <form action="becomeseller" method="POST">
+            <label for="product-name">Tên sản phẩm:</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="product-price">Giá sản phẩm:</label>
+            <input type="text" id="product-price" name="product-price" required>
+
+            <label for="product-description">Mô tả sản phẩm:</label>
+            <textarea id="product-description" name="product-description" required></textarea>
+
+            <label for="product-image">Hình ảnh:</label>
+            <input type="file" id="product-image" name="product-image" required>
+
+            <input type="submit" value="Gửi">
+        </form>
+        </div>
+
+
+
+
+
+        <script src=""></script>
+
     </body>
 </html>
